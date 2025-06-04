@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Code Breaker</title>
+    <script src="https://js.puter.com/v2/"></script>
+    
+<link rel="stylesheet" href="style.css"></head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 HTML5 Code Breaker</h1>
+            <p>Paste your mixed HTML/CSS/JS code and get properly separated files with correct linking</p>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <h2>Input Code</h2>
+                <textarea id="codeInput" class="code-input" placeholder="Paste your HTML code with embedded CSS and JavaScript here...
+
+Example:
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;body { color: red; }&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;script&gt;console.log('Hello');&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;"></textarea>
+            </div>
+
+            <div class="controls">
+                <button id="breakCodeBtn" class="btn btn-primary">
+                    <span>🔨</span>
+                    <span>Break Code Apart</span>
+                </button>
+                <button id="saveFilesBtn" class="btn btn-success" disabled="">
+                    <span>💾</span>
+                    <span>Save Files to Puter</span>
+                </button>
+                <button id="downloadFilesBtn" class="btn btn-info" disabled="">
+                    <span>📥</span>
+                    <span>Download to PC</span>
+                </button>
+                <button id="loadExampleBtn" class="btn example-btn">
+                    <span>📋</span>
+                    <span>Load Example</span>
+                </button>
+            </div>
+
+            <div id="statusDiv" class="hidden"></div>
+
+            <div id="outputSection" class="output-section hidden">
+                <h2 style="color: #333; margin-bottom: 20px; font-size: 1.5rem;">📁 Generated Files</h2>
+                <div class="files-grid">
+                    <div class="file-output">
+                        <div class="file-header">
+                            <div class="file-name">
+                                <span class="file-icon">📄</span>
+                                <span>index.html</span>
+                            </div>
+                            <button class="copy-btn" data-target="htmlOutput">Copy</button>
+                        </div>
+                        <div class="file-content">
+                            <pre id="htmlOutput"></pre>
+                        </div>
+                    </div>
+
+                    <div class="file-output">
+                        <div class="file-header">
+                            <div class="file-name">
+                                <span class="file-icon">🎨</span>
+                                <span>style.css</span>
+                            </div>
+                            <button class="copy-btn" data-target="cssOutput">Copy</button>
+                        </div>
+                        <div class="file-content">
+                            <pre id="cssOutput"></pre>
+                        </div>
+                    </div>
+
+                    <div class="file-output">
+                        <div class="file-header">
+                            <div class="file-name">
+                                <span class="file-icon">⚡</span>
+                                <span>app.js</span>
+                            </div>
+                            <button class="copy-btn" data-target="jsOutput">Copy</button>
+                        </div>
+                        <div class="file-content">
+                            <pre id="jsOutput"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<script src="app.js"></script></body></html>
