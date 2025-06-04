@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://puter.com/app/code-splitter" target="_blank">HTML5 Code Breaker</a>
+  <a href="https://puter.com/app/code-splitter" target="_blank">Code Splitter</a>
 </h1>
 
 <p align="center">A web-based tool that splits mixed HTML, CSS, and JavaScript code into separate, properly linked files.
