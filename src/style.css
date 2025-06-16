@@ -84,8 +84,13 @@
         }
 
         .input-section h2::before {
-            content: "📝";
+            content: "";
+            font-family: "Font Awesome 5 Free";
+            content: "\f044"; /* fa-edit icon */
+            font-weight: 900;
             font-size: 1.3rem;
+            color: #667eea;
+            margin-right: 8px;
         }
 
         .code-input {

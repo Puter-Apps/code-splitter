@@ -352,7 +352,7 @@
                 // Write JavaScript file using the same fs.write method
                 await puter.fs.write(`${folderPath}/app.js`, generatedFiles.js);
                 
-                showStatus(`✅ Files saved successfully to: "${folderPath}"`, 'success');
+                showStatus(`<i class="fas fa-check-circle" style="color: #155724;"></i> Files saved successfully to: "${folderPath}"`, 'success');
                 
             } catch (error) {
                 if (error.message.includes('canceled') || error.message.includes('cancelled')) {
@@ -388,7 +388,7 @@
                 document.body.removeChild(link);
                 URL.revokeObjectURL(url);
                 
-                showStatus('✅ Files downloaded successfully as code-breaker-files.zip', 'success');
+                showStatus('<i class="fas fa-check-circle" style="color: #155724;"></i> Files downloaded successfully as code-breaker-files.zip', 'success');
                 
             } catch (error) {
                 showStatus('Error downloading files: ' + error.message, 'error');
